@@ -6,8 +6,8 @@ public class TempReadingService {
 
     private List<TempReadingEntity> tempReadings = List.empty();
 
-    public int addTempReading(final TempReading tempReading) {
-        tempReadings = tempReadings.prepend(new TempReadingEntity(tempReadings.size(), tempReading.temp));
+    public int addTempReading(final NewTempReading newTempReading) {
+        tempReadings = tempReadings.prepend(new TempReadingEntity(tempReadings.size(), newTempReading.temp));
         return tempReadings.size();
     }
 

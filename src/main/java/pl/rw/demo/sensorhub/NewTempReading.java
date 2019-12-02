@@ -1,19 +1,20 @@
 package pl.rw.demo.sensorhub;
 
-public class TempReading {
-    public final String temp;
-    public final String timestamp;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
-    public TempReading(String temp, String timestamp) {
+public class NewTempReading {
+    public final String temp;
+
+    @JsonCreator
+    public NewTempReading(@JsonProperty("temp") String temp) {
         this.temp = temp;
-        this.timestamp = timestamp;
     }
 
     @Override
     public String toString() {
         return "TempReading{" +
                 "temp='" + temp + '\'' +
-                ", timestamp='" + timestamp + '\'' +
                 '}';
     }
 }

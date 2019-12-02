@@ -12,8 +12,8 @@ public class SensorController {
     private TempReadingService tempReadingService = new TempReadingService();
 
     @PostMapping(path = "/temp", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
-    public int newTemperatureReading(@RequestBody TempReading tempReading) {
-        return this.tempReadingService.addTempReading(tempReading);
+    public int newTemperatureReading(@RequestBody NewTempReading newTempReading) {
+        return this.tempReadingService.addTempReading(newTempReading);
     }
 
     @GetMapping(path = "/temp", produces = MediaType.APPLICATION_JSON_VALUE)
