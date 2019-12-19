@@ -1,4 +1,4 @@
-package pl.rw.demo.sensorhub;
+package pl.rw.demo.sensorhub.domain;
 
 public class TempReadingEntity {
     public final long id;

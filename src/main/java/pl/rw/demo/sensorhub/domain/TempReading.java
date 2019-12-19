@@ -1,4 +1,4 @@
-package pl.rw.demo.sensorhub;
+package pl.rw.demo.sensorhub.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
