@@ -1,6 +1,7 @@
 package pl.rw.demo.sensorhub.service;
 
 import io.vavr.collection.List;
+import pl.rw.demo.sensorhub.domain.NewTempReading;
 import pl.rw.demo.sensorhub.domain.TempReading;
 import pl.rw.demo.sensorhub.domain.TempReadingEntity;
 

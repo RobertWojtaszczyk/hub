@@ -2,6 +2,7 @@ package pl.rw.demo.sensorhub.controller;
 
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import pl.rw.demo.sensorhub.domain.NewTempReading;
 import pl.rw.demo.sensorhub.domain.TempReading;
 import pl.rw.demo.sensorhub.service.TempReadingService;
 
