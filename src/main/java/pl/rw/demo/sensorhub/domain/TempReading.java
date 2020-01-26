@@ -1,6 +1,8 @@
 package pl.rw.demo.sensorhub.domain;
 
-public class TempReading {
+import java.io.Serializable;
+
+public class TempReading implements Serializable {
     public final String temp;
     public final String timestamp;
 
