@@ -8,6 +8,7 @@ import pl.rw.demo.sensorhub.domain.NewTempReading;
 public class ReceiveMq {
 
     //private RabbitTemplate rabbitTemplate;
+    // ...
 
     /*public ReceiveMq(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
