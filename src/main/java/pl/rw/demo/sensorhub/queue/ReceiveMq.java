@@ -16,6 +16,6 @@ public class ReceiveMq {
     @RabbitListener(queues = "sensor")
     public void readTemperature(NewTempReading temp) {
         // Object sensor = rabbitTemplate.receiveAndConvert("sensor");
-        System.out.println(temp.toString());
+        System.out.println("Message from RabbitMq: " + temp.toString());
     }
 }
